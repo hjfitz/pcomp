@@ -1,9 +1,10 @@
 {
-  "name": "plantuml-compiler",
+  "name": "pcomp",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:hjfitz/plantuml-compiler.git",
   "author": "Harry F <harry.f@elanco.com>",
+  "keywords": ["puml", "plantuml", "compiler", "uml", "diagram"],
   "license": "MIT",
   "dependencies": {
     "debug": "^4.1.1",
