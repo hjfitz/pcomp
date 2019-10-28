@@ -10,11 +10,15 @@ const {argv} = require('yargs')
 const {file} = argv
 debug(`file: ${file}`)
 
-if (typeof file === 'boolean' || !file || !(argv.png || argv.svg)) {
+if (argv.help || argv.h || typeof file === 'boolean' || !file || !(argv.png || argv.svg)) {
 	const thisFile = path.basename(process.argv[1])
-	console.error(`Usage: ${thisFile} --file=/path/to/input.puml --svg --png`)
+	console.error(`Usage: ${thisFile} [options]`)
+	console.error(`Options:`)
+	console.error(`	--file=...		filename to compile`)
+	console.error(`	-h, --help		show this dialog`)
+	console.error(`	--png			save as png`)
+	console.error(`	--svg			save as svg`)
 	process.exit(1)
-	
 }
 
 // get outfile name
