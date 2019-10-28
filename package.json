@@ -4,7 +4,13 @@
   "main": "index.js",
   "repository": "git@github.com:hjfitz/plantuml-compiler.git",
   "author": "Harry F <harry.f@elanco.com>",
-  "keywords": ["puml", "plantuml", "compiler", "uml", "diagram"],
+  "keywords": [
+    "puml",
+    "plantuml",
+    "compiler",
+    "uml",
+    "diagram"
+  ],
   "license": "MIT",
   "bin": {
     "pcomp": "index.js"
@@ -13,6 +19,7 @@
     "debug": "^4.1.1",
     "plantuml-encoder": "^1.4.0",
     "request": "^2.88.0",
-    "request-promise": "^4.2.4"
+    "request-promise": "^4.2.4",
+    "yargs": "^14.2.0"
   }
 }
