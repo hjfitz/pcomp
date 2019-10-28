@@ -10,6 +10,12 @@ $ yarn global add pcomp
 
 Generate a SVG and PNG:
 
-```bash
-$ pcomp /path/to/plantuml/file
+```
+$ pcomp -h
+Usage: index.js [options]
+Options:
+        --file=...              filename to compile
+        -h, --help              show this dialog
+        --png                   save as png
+		--svg                   save as svg
 ```
